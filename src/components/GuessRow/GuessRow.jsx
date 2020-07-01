@@ -2,9 +2,10 @@ import React from 'react';
 import GuessPegs from '../GuessPegs/GuessPegs';
 import GuessScore from '../GuessScore/GuessScore';
 import ScoreButton from '../ScoreButton/ScoreButton';
+import './GuessRow.css'
 
 const GuessRow = (props) => (
-  <div className='flex-h'>
+  <div className='flex-h GuessRow'>
     <div style={{color: props.currentGuess ? 'black' : 'lightgrey'}}>
       {props.rowIdx + 1}
     </div>
